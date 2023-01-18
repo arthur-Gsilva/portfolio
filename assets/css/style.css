@@ -12,7 +12,8 @@
 }
 
 :root{
-    --primary-color: #2471A3;
+    /* --primary-color: #2471A3; */
+    --primary-color: #1A5276;
     --body-color: hsl(30, 8%, 10%);
     --container-color: hsl(30, 8%, 8%);
 
@@ -153,7 +154,7 @@ img{
 /* HOME */
 
 .home{
-    height: 100vh;
+    
 }
 
 .home-container{
@@ -194,8 +195,9 @@ img{
 }
 
 #about-text{
-    color: var(--secundary-text-color);
+    color: var(--primary-text-color);
     text-align: center;
+    
 }
 
 .about .contact{
