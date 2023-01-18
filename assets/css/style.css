@@ -152,9 +152,8 @@ img{
 
 
 /* HOME */
-
 .home{
-    
+    height: 90vh;
 }
 
 .home-container{
