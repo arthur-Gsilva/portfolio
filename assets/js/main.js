@@ -34,7 +34,7 @@ window.addEventListener('scroll', backgroundChange)
 
 let projectsSlider = new Swiper(".projects-swiper", {
     centeredSlides: true,
-    slidesPerView: "auto",
+    slidesPerView: 'auto',
     loop: 'true',
-    spaceBetween: 16,
+    spaceBetween: 10,
 })

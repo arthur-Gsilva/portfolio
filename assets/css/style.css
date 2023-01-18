@@ -223,15 +223,11 @@ img{
 }
 
 .swiper-slide{
-    width: 300px;
     transition: .3s;
+    width: 300px;
 }
 .swiper-slide:hover{
     opacity: .6;
-}
-
-.projects-img{
-    width: 300px;
 }
 
 .projects-img-title{
@@ -250,6 +246,12 @@ img{
     font-size: 2rem;
     margin-top: 1.5rem;
     margin-bottom: 4rem;
+}
+
+
+.swiper-pagination{
+    position: initial;
+    margin-top: 1rem;
 }
 
 
