@@ -59,6 +59,18 @@ img{
     margin: 1.5rem 0;
 }
 
+.contact{
+    margin-top: 1rem;
+}
+
+.contact i{
+    color: var(--secundary-text-color);
+    font-size: 1.3rem;
+    transition: .3s;
+}
+.contact i:hover{
+    color: var(--primary-text-color);
+}
 
 /* HEADER */
 
@@ -66,6 +78,7 @@ img{
     position: fixed;
     width: 100%;
     height: 60px;
+    z-index: 10;
 }
 
 .header-container{
@@ -162,19 +175,6 @@ img{
     color: var(--secundary-text-color);
 }
 
-.home-contact{
-    margin-top: 1rem;
-}
-
-.home-contact i{
-    color: var(--secundary-text-color);
-    font-size: 1.3rem;
-    transition: .3s;
-}
-.home-contact i:hover{
-    color: var(--primary-text-color);
-}
-
 /* ABOUT */
 
 .about{
@@ -198,8 +198,20 @@ img{
     text-align: center;
 }
 
+.about .contact{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.about .contact i{
+    font-size: 2rem;
+}
 
 /* PROJECTS */
+
+.projects-swiper{
+    margin-bottom: 40px;
+}
 
 .project-slider-title{
     text-align: center;
@@ -209,9 +221,10 @@ img{
 
 .swiper-slide{
     width: 300px;
+    transition: .3s;
 }
 .swiper-slide:hover{
-    opacity: .5;
+    opacity: .6;
 }
 
 .projects-img{
@@ -224,4 +237,86 @@ img{
     background-color: var(--primary-color);
     padding: 5px;
     margin-top: -4px;
+}
+
+
+.coming-soon{
+    color: var(--secundary-text-color);
+    font-weight: bold;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+
+/* TECHS */
+
+.techs{
+    background-color: var(--primary-color);
+}
+
+.techs-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+}
+
+.tech-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.tech-item i{
+    font-size: 5rem;
+}
+
+.tech-name{
+    color: var(--secundary-text-color);
+}
+
+#html{ 
+    color: #DC7633;
+}
+
+#css{
+    color: #3498DB;
+}
+
+#responsive{
+    color: var(--secundary-text-color);
+}
+
+#git{
+    color: orangered;
+}
+
+#github{
+    color: #000;
+}
+
+#javascript{
+    color: orange;
+}
+
+#typescript{
+    color: #3498DB;
+}
+
+#sass{
+    color: palevioletred;
+}
+
+
+/* FOOTER */
+
+.footer{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+.footer i{
+    font-size: 2rem;
 }
