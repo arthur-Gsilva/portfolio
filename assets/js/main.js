@@ -38,3 +38,24 @@ let projectsSlider = new Swiper(".projects-swiper", {
     loop: 'true',
     spaceBetween: 10,
 })
+
+// MENU NAVIGATION
+
+const sections = document.querySelectorAll('section[id]')
+
+const scrollActive = () => {
+    const scrollY = window.pageYOffset
+
+    sections.forEach(section =>{
+        const sectionHeight = section.offsetHeight
+        const sectionTop = section.offsetTop - 58
+        const sectionId = section.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav-menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)

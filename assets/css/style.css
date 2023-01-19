@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Red+Hat+Display:wght@400;700;900&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 *{
     padding: 0;
@@ -21,6 +20,10 @@
 
     --primary-text-color: aliceblue;
     --secundary-text-color: rgb(185, 180, 180);
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 
@@ -68,11 +71,15 @@ img{
 
 .contact i{
     color: var(--secundary-text-color);
-    font-size: 1.3rem;
+    font-size: 2rem;
     transition: .3s;
 }
 .contact i:hover{
     color: var(--primary-text-color);
+}
+
+.active-link{
+    color: var(--primary-color) !important;
 }
 
 /* HEADER */
@@ -154,10 +161,6 @@ img{
 
 
 /* HOME */
-.home{
-    
-}
-
 .home-container{
     display: grid;
     gap: 3rem;
@@ -167,6 +170,7 @@ img{
 .home-subtitle{
     text-transform: uppercase;
     color: var(--primary-text-color);
+    white-space: nowrap;
 }
 
 .home-title{
@@ -206,9 +210,6 @@ img{
     text-align: center;
 }
 
-.about .contact i{
-    font-size: 2rem;
-}
 
 /* PROJECTS */
 
@@ -322,6 +323,93 @@ img{
     padding: 1rem 0;
 }
 
-.footer i{
-    font-size: 2rem;
+/* SCROLL BAR */
+
+::-webkit-scrollbar{
+    width: 0.6rem;
+    background: #413e3e;
+}
+  
+::-webkit-scrollbar-thumb{
+    background: #272525;
+    border-radius: .5rem;
+}
+
+
+@media(min-width: 750px){
+    .home-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .home-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+}
+
+@media(min-width: 968px){
+    .menu-opener,
+    .nav-close{
+        display: none;
+    }
+
+    .nav-list{
+        flex-direction: row;
+    }
+
+    .header{
+        height: 80px;
+    }
+
+    .techs-content{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    .about-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #about-text{
+        text-align: center;
+    }
+
+    .about .contact{
+        transform: translateY(-40px);
+    }
+
+
+
+    .tech-name{
+        transform: translateY(-30px);
+        opacity: 0;
+        transition: .4s;
+    }
+
+    .tech-item:hover .tech-name{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media(min-width: 1046px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-data{
+        transform: translateY(130px);
+    }
+
+    .home-title{
+        font-size: 3rem;
+    }
+
+    .home-subtitle{
+        font-size: 2rem;
+    }
 }
