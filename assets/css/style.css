@@ -239,6 +239,10 @@ img{
     margin-top: -4px;
 }
 
+.projects-content a{
+    cursor: pointer;
+}
+
 
 .coming-soon{
     color: var(--secundary-text-color);
