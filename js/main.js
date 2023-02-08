@@ -74,8 +74,14 @@ let projectsJavascript = [
     {title: 'Todo List', href: 'https://arthur-gsilva.github.io/projetos-javascript/todo/', src: '../assets/images/projects/todo.png'}
 ]
 
+let projectsReact = [
+    {title: 'Calculadora IMC', href: 'https://calculator-imc-two.vercel.app/', src: '../assets/images/projects/calculadora-imc-react.png'},
+    {title: 'Todo List', href: 'https://react-todo-list-nu-seven.vercel.app/', src: '../assets/images/projects/todo-list-react.png'}
+]
+
 const swiperHtmlCss = document.querySelector('.swiper-html-css')
 const swiperJavascript = document.querySelector('.swiper-javascript')
+const swiperReact = document.querySelector('.swiper-react')
 
 
 const createSlide = (slides, container) => {
@@ -84,7 +90,7 @@ const createSlide = (slides, container) => {
             <div class='swiper-slide'>
                 <div class='projects-content'>
                     <a href=${slide.href} target='_blank'>
-                        <img src=${slide.src} class='projects-img'>
+                        <img src=${slide.src} alt='${slide.title}' class='projects-img'>
                         <div class="projects-img-title">${slide.title}</div>
                     </a>
                 </div>
@@ -95,6 +101,7 @@ const createSlide = (slides, container) => {
 
 createSlide(projectsHtmlCss, swiperHtmlCss)
 createSlide(projectsJavascript, swiperJavascript)
+createSlide(projectsReact, swiperReact)
 
 let projectsSlider = new Swiper(".projects-swiper", {
     centeredSlides: true,
