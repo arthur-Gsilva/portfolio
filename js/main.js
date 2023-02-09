@@ -76,7 +76,8 @@ let projectsJavascript = [
 
 let projectsReact = [
     {title: 'Calculadora IMC', href: 'https://calculator-imc-two.vercel.app/', src: '../assets/images/projects/calculadora-imc-react.png'},
-    {title: 'Todo List', href: 'https://react-todo-list-nu-seven.vercel.app/', src: '../assets/images/projects/todo-list-react.png'}
+    {title: 'Todo List', href: 'https://react-todo-list-nu-seven.vercel.app/', src: '../assets/images/projects/todo-list-react.png'},
+    {title: 'Movies', href: 'https://react-movies-chi.vercel.app/', src: '../assets/images/projects/react-movies.png'}
 ]
 
 const swiperHtmlCss = document.querySelector('.swiper-html-css')
