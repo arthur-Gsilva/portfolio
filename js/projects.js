@@ -18,9 +18,11 @@ let projectsJavascript = [
 ]
 
 let projectsReact = [
-    {title: 'Calculadora IMC', href: 'https://calculator-imc-two.vercel.app/', src: '../assets/images/projects/calculadora-imc-react.png'},
+    {title: 'Github Finder', href: 'https://github-finder-gamma-ashen.vercel.app/', src: '../assets/images/projects/github-finder.png'},
+    {title: 'DevsFood', href: 'https://devsfood-seven.vercel.app/', src: '../assets/images/projects/devsfood.png'},
     {title: 'Todo List', href: 'https://react-todo-list-nu-seven.vercel.app/', src: '../assets/images/projects/todo-list-react.png'},
     {title: 'Movies', href: 'https://react-movies-chi.vercel.app/', src: '../assets/images/projects/react-movies.png'},
     {title: 'Arthurflix', href: 'https://arthurflix-gray.vercel.app/', src: '../assets/images/projects/arthurflix.png'},
-    {title: 'Twitter Clone', href: 'https://twitter-clone-two-teal.vercel.app/', src: '../assets/images/projects/twiiter-clone.png'}
+    {title: 'Twitter Clone', href: 'https://twitter-clone-two-teal.vercel.app/', src: '../assets/images/projects/twiiter-clone.png'},
+    {title: 'Calculadora IMC', href: 'https://calculator-imc-two.vercel.app/', src: '../assets/images/projects/calculadora-imc-react.png'}
 ]

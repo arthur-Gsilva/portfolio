@@ -213,6 +213,10 @@ img{
 
 /* PROJECTS */
 
+.project-slider-title{
+    font-size: 1.4rem;
+}
+
 .projects-swiper{
     margin-bottom: 40px;
 }
@@ -320,6 +324,10 @@ img{
 
 #react{
     color: #3498DB;
+}
+
+.next-icon{
+    width: 80px;
 }
 
 
